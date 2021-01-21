@@ -1,0 +1,28 @@
+1. Inicio
+2. funcion principal()
+3.      k, i[0-n]
+4.      residuo, i[0-n]
+5.      Escribir "Ingrese un número"
+6.      Leer k
+7.      residuo <-- extraerMod(k)
+8.      Escribir procedimiento(residuo, k)
+9. fin funcion principal
+
+10. funcion extraerMod(k, i) : i
+11.     residuo, i[0-n]
+12.     residuo <-- k1 MOD 10
+13.     retorna residuo
+14. fin funcion extraerMod
+
+15. funcion procedimiento(residuo, i; k1, i) : x
+16.     cadena, x(200)[{a-z},{A-Z},{0-100},{BS}] <-- ""
+17.     j, i[0-n] <-- 0
+18.     Mientras(k1 > 0) entonces
+19.         residuo <-- extraerMod(k1)
+20.         cadena <-- cadena + residuo + " * 10 elevado a la potencia " + j + "\n"
+21.         j <-- j + 1
+22.         k1 <-- k1 / 10
+23.     fin Mientras
+24.     retorna cadena
+25. fin funcion procedimiento
+26. fin
